@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>www.sport.com</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="footercss.css">
+        <!--<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>  
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+        -->
+    </head>
+   
+    <body>
+        <marquee>Sports</marquee>
+        <section class="home">
+            <header>
+                <a href="#" class="logo"><b>Sports</b></a>
+                <ul>
+                     <li><a href="main.html">Home</a></li>
+                     <li><a href="#">category</a></li>
+                    <li><a href="product.html">Update Score</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="about.html"target="blank">About</a></li>
+                    <li><a href="contact1.html">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Sports<br><span>I like</span></h2>
+                    <p>
+                        WE ARE GROWN MEN PLAYING A CHILD'S GAME'
+                         THE BEARDED MAN LAUGHING AT HIS DAUGHTER IS BILL RUSSELL,
+                          THE MOST REMARKABLE BASKETBALL PLAYER OF OUR TIME. SPORT, HOWEVER,
+                           IS ONE OF HIS LESSER INTERESTS. HERE ARE HIS TRENCHANT,
+                            OFTEN ANGRY OBSERVATIONS ON TODAY'S NEGRO-WHITE CRISIS AND HIS ROLE IN IT
+                    </p>
+                    <a href="view all sports.html">View All Sports</a>
+                </div>
+                <div class="imgBox">
+                    <img src="img/3.png" alt="" class="sports">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="img/1.png" onclick="imgSlider('img/1.png'); changeColor('#a18c02');"></li>
+                <li><img src="img/4.png" onclick="imgSlider('img/4.png'); changeColor('#2236b4');"></li>
+                <li><img src="img/3.png" onclick="imgSlider('img/3.png'); changeColor('#566a3b');"></li>
+            </ul>
+        </section>
+        <footer>
+            <div class="container">  
+                <div class="row">  
+                <div class="col-md-12">  
+                <h1> EXAMPLE: BOOTSTRAP3 FOOTER </h1>  
+                <footer class="footer">  
+                <div class="container">  
+                <div class="row">  
+                <div class="col-md-3 m-b-30">  
+                <div class="footer-title m-t-5 m-b-20 p-b-8">  
+                About us  
+                </div>  
+                <p class="white-text">  
+                Lorem Ipsum.  
+                </p>  
+                </div>  
+                <div class="col-md-3 m-b-30">  
+                <div class="footer-title m-t-5 m-b-20 p-b-8">  
+                Latest themes  
+                </div>  
+                <div class="footer-links">  
+                <a href="#">  
+                Appointment  
+                </a>  
+                <a href="#">  
+                Health center  
+                </a>  
+                <a href="#">  
+                Quality  
+                </a>  
+                <a href="#">  
+                Wallstreet  
+                </a>  
+                </div>  
+                </div>  
+                <div class="col-md-3 m-b-30">  
+                <div class="footer-title m-t-5 m-b-20 p-b-8">  
+                Quick Links  
+                </div>  
+                <div class="footer-links">  
+                <a href="#">  
+                Blog  
+                </a>  
+                <a href="#">  
+                FAQ  
+                </a>  
+                <a href="#">  
+                Terms & conditions  
+                </a>  
+                <a href="#">  
+                Privacy policy  
+                </a>  
+                </div>  
+                </div>  
+                <div class="col-md-3 m-b-30">  
+                <div class="footer-title m-t-5 m-b-20 p-b-8">  
+                Support  
+                </div>  
+                <div class="footer-links">  
+                <a href="#">  
+                Affiliate  
+                </a>  
+                <a href="#">  
+                Login  
+                </a>  
+                <a href="#">  
+                All theme package  
+                </a>  
+                <a href="#">  
+                Support forum  
+                </a>  
+                </div>  
+                <div class="footer-social-links m-t-30">  
+                <li> <a href="#">  
+                <i class="fa fa-facebook" aria-hidden="true"> </i> </a>  
+                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>  
+                <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"> </i> </a>  
+                <a href="#"> <i class="fa fa-youtube" aria-hidden="true"> </i> </a>  
+                </li>  
+                </div>  
+                </div>  
+                </div>  
+                </div>  
+                </footer>  
+                <div class="footer-bottom">  
+                Copyright ? 2017, All Rights Reserved  
+                </div>  
+                </div>  
+                </div>  
+                </div>  
+                </footer>
+    </body>
+</html>
+
+<script>
+    function imgSlider(someThing){
+        document.querySelector('.sports').src = someThing;
+    }
+    function changeColor(color){
+        const sec = document.querySelector('.home');
+        sec.style.background = color;
+    }
+</script>

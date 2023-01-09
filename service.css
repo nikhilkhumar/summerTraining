@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    width: 100%;
+    padding: 0 8%;
+}
+.center{
+    text-align: center;
+}
+.services_section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 80, 167, 0.1);
+    padding-top: 50px;
+}
+.services_section h2{
+    margin: 15px 0;
+    color: #333;
+    font-size: 36px;
+}
+.services_section .text-top{
+    max-width: 45%;
+    margin: 10px auto;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+.services_section .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.services_section .row .col{
+    width: 32%;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 51px;
+}
+.services_section .row .col:hover{
+    cursor: pointer;
+    box-shadow:  0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+.services_section .row .col i{
+    background-color: #0041ff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 20px 20px rgba(4 0 255 / 20%);
+}
+.services_section .row .col:nth-child(2) i{
+    background-color: #ff1e38;
+    box-shadow: 0 20px 20px rgb(255 30 56 / 20%);
+}
+.services_section .row .col:nth-child(3) i{
+    background-color: #fcdc00;
+    box-shadow: 0 20px 20px rgba(252 220 0 / 20%);
+}
+.services_section .row .col h3{
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 30px;
+    color: #262729;
+    margin: 25px 0;
+}
+.services_section .row .col p{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.86666;
+    margin-bottom: 26px;
+    color: rgba(38, 39, 41, 0.7);
+}
+ 
+/* MOBILE RESPONSIVE  */
+ 
+@media (max-width: 768px) {
+    .services_section .row{
+        flex-direction: column;
+    }
+    .services_section .row .col{
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+    .services_section .text-top{
+        max-width: 100%;
+    }
+}
